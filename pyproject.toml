@@ -1,0 +1,21 @@
+[tool.flake8]
+ignore = "E203, E266, E501, W503"
+max-line-length = 120
+max-complexity = 30
+select = "B, C, E, F, W, T4, B9"
+
+[tool.isort]
+profile = "black"
+line_length = 120
+lines_after_imports = 2
+
+[tool.pylint.messages_control]
+disable = "C0330, C0326"
+
+[tool.pylint.format]
+max-line-length = "120"
+
+[tool.black]
+line-length = 120
+target-version = ['py39']
+include = '\.pyi?$'
